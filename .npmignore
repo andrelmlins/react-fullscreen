@@ -1,0 +1,10 @@
+node_modules/
+build/
+example/
+
+.prettierrc
+.babelrc
+.eslintrc.json
+yarn-error.log
+yarn.lock
+.travis.yml

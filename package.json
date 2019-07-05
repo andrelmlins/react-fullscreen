@@ -1,0 +1,57 @@
+{
+  "name": "react-fullscreen",
+  "version": "0.1.0",
+  "description": "Component screenfull.js based",
+  "main": "dist/index.js",
+  "homepage": "https://react-fullscreen.netlify.com/",
+  "contributors": [
+    "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
+    "Leandro Alexandrino <> (http://leandrino.me/)"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development",
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --ignore *.spec.js --copy-files",
+    "lint": "eslint src/**/*.js",
+    "test": "jest -c jest.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrelmlins/react-fullscreen.git"
+  },
+  "keywords": [
+    "react",
+    "fullscreen"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrelmlins/react-fullscreen/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "screenfull": "^4.2.0"
+  }
+}
