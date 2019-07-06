@@ -1,28 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { createRef, memo, useEffect } from 'react';
+import { PropTypes } from 'prop-types';
 import screenfull from 'screenfull';
 
-export class FullScreenComponent extends React.Component {
-  constructor(props) {
-    super(props);
+const ReactFullScreen = memo(({ children, onChange }) => {
+  const element = createRef();
 
-    this.ref = React.createRef();
-  }
+  useEffect(() => onChange());
+  
+  return children({
+    ref: element,
+    onToggle: () => screenfull.toggle(element.current),
+    onRequest: () => screenfull.request(element.current),
+    onExit: () => screenfull.exit(element.current)
+  });
+});
 
-  render() {
-    const { children } = this.props;
+ReactFullScreen.propTypes = {
+  children: PropTypes.node
+};
 
-    return (
-      <div style={{ backgroundColor: 'red', width: 120, height: 120 }}>
-        {children({
-          ref: this.ref,
-          onToggle: () => {
-            screenfull.toggle(this.ref.current);
-          }
-        })}
-      </div>
-    );
-  }
-}
-
-export default FullScreenComponent;
+export default ReactFullScreen;

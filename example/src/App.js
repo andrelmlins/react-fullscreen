@@ -3,7 +3,7 @@ import FullScreenComponent from 'react-fullscreen';
 
 const App = () => {
   return (
-    <FullScreenComponent>
+    <FullScreenComponent onChange={() => console.log('changed')}>
       {({ ref, onToggle }) => {
         return (
           <div
