@@ -17,22 +17,18 @@ export class FullScreenComponent extends React.Component {
   render() {
     const { children } = this.props;
 
-    return (
-      <div style={{ backgroundColor: 'red', width: 120, height: 120 }}>
-        {children({
-          ref: this.ref,
-          onToggle: () => {
-            screenfull.toggle(this.ref.current);
-          },
-          onRequest: () => {
-            screenfull.request(this.ref.current);
-          },
-          onExit: () => {
-            screenfull.exit(this.ref.current);
-          }
-        })}
-      </div>
-    );
+    return children({
+      ref: this.ref,
+      onToggle: () => {
+        screenfull.toggle(this.ref.current);
+      },
+      onRequest: () => {
+        screenfull.request(this.ref.current);
+      },
+      onExit: () => {
+        screenfull.exit(this.ref.current);
+      }
+    });
   }
 }
 
