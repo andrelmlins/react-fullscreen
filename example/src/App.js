@@ -3,14 +3,18 @@ import FullScreenComponent from 'react-fullscreen';
 
 const App = () => {
   return (
-    <FullScreenComponent>
-      {({ ref, onToggle }) => {
+    <FullScreenComponent
+      onChange={() => console.log('Screen')}
+      onError={() => console.log('Error')}
+    >
+      {({ ref, onRequest, onExit }) => {
         return (
           <div
             ref={ref}
             style={{ backgroundColor: 'red', width: 120, height: 120 }}
           >
-            <button onClick={() => onToggle()}>Expandir</button>
+            <button onClick={() => onRequest()}>FullScreen</button>
+            <button onClick={() => onExit()}>Screen</button>
           </div>
         );
       }}
