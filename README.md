@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-fullscreen.svg)](https://www.npmjs.com/package/react-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/react-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/react-fullscreen) &bull; [![Dependencies](https://david-dm.org/andrelmlins/react-fullscreen.svg)](https://david-dm.org/andrelmlins/react-fullscreen)
 
-Component that customizes the image and inserts shadow when scrolling exists
+Component that performs fullscreen in DOM Elements
 
 ## Installation
 
