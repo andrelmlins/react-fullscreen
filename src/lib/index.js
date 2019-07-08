@@ -10,7 +10,10 @@ export class FullScreenComponent extends React.Component {
   }
 
   componentDidMount() {
-    screenfull.onchange(() => this.props.onChange());
+    const { onChange } = this.props
+    if (onChange) {
+     return screenfull.onchange(() => onChange());
+    }
   }
 
   render() {
