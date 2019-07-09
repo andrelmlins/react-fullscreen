@@ -1,8 +1,12 @@
 {
   "name": "react-fullscreen",
   "version": "0.1.0",
-  "description": "Component screenfull.js based",
+  "description": "Component that performs fullscreen in DOM Elements",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "homepage": "https://react-fullscreen.netlify.com/",
   "contributors": [
     "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",

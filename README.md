@@ -58,7 +58,7 @@ render(<App />, document.getElementById('root'));
 
 Raw component props (before transform):
 
-| Prop     | Default | Type | Description    |
-| -------- | ------- | ---- | -------------- |
-| onChange | #c5c5c5 | func | Call in change |
-| onError  | #a6a6a6 | func | Call in error  |
+| Prop     | Type | Description    |
+| -------- | ---- | -------------- |
+| onChange | func | Call in change |
+| onError  | func | Call in error  |
