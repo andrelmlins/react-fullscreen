@@ -13,7 +13,7 @@ const style = {
     color: '#1f2041',
     textTransform: 'uppercase'
   },
-  screen: { 
+  screen: {
     alignItems: 'center',
     backgroundColor: '#417b5a',
     display: 'flex',
@@ -36,50 +36,47 @@ const style = {
     cursor: 'pointer',
     width: '50%'
   }
-}
+};
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <FullScreenComponent onChange={() => console.log('changed')}>
-      {({ ref, onToggle }) => {
-=======
     <div style={style.container}>
-    <h1 style={style.title}>React Fullscreen</h1>
-    <div>
-      <a href="https://github.com/andrelmlins/react-fullscreen">
-        <img 
-          alt="GitHub stars"
-          src="https://img.shields.io/github/stars/andrelmlins/react-fullscreen.svg?style=social"
-        />
-      </a>
-    </div>
-    <FullScreenComponent
-      onChange={() => console.log('Screen')}
-      onError={() => console.log('Error')}
-    >
-      {({ ref, onRequest, onExit }) => {
->>>>>>> master
-        return (
-          <div
+      <h1 style={style.title}>React Fullscreen</h1>
+      <div>
+        <a href="https://github.com/andrelmlins/react-fullscreen">
+          <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/andrelmlins/react-fullscreen.svg?style=social"
+          />
+        </a>
+      </div>
+      <FullScreenComponent
+        onChange={() => console.log('Screen')}
+        onError={() => console.log('Error')}
+      >
+        {({ ref, onRequest, onExit }) => {
+          return (
+            <div ref={ref} style={style.screen}>
+              <button onClick={() => onRequest()} style={style.button}>
+                FullScreen
+              </button>
+              <button onClick={() => onExit()} style={style.button}>
+                Screen
+              </button>
+            </div>
+          );
+        }}
+      </FullScreenComponent>
+      <FullScreenComponent>
+        {({ ref, onToggle }) => (
+          <img
             ref={ref}
-            style={style.screen}
-          >
-            <button onClick={() => onRequest()} style={style.button}>FullScreen</button>
-            <button onClick={() => onExit()} style={style.button}>Screen</button>
-          </div>
-        );
-      }}
-    </FullScreenComponent>
-    <FullScreenComponent>
-      {({ ref, onToggle }) =>
-        <img 
-          ref={ref} 
-          src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2"  
-          onClick={() => onToggle()} 
-          style={style.image}
-        />}
-    </FullScreenComponent>
+            src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2"
+            onClick={() => onToggle()}
+            style={style.image}
+          />
+        )}
+      </FullScreenComponent>
     </div>
   );
 };

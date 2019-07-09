@@ -10,7 +10,7 @@
   "homepage": "https://react-fullscreen.netlify.com/",
   "contributors": [
     "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
-    "Leandro Alexandrino <> (http://leandrino.me/)"
+    "Leandro Alexandrino <alexandrinowd@gmail.com> (http://leandrino.me/)"
   ],
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development",

@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "8"
-  - "9"
+  - '8'
+  - '10'
 cache: yarn
 
 install: yarn
@@ -12,12 +12,12 @@ jobs:
   include:
     - stage: npm release
       if: tag IS present
-      node_js: "8"
+      node_js: '8'
       script: yarn build
       deploy:
         provider: npm
-        email: "$EMAIL_ADDRESS"
-        api_key: "$AUTH_TOKEN"
+        email: '$EMAIL_ADDRESS'
+        api_key: '$AUTH_TOKEN'
         skip_cleanup: true
         on:
           tags: true
