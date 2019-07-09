@@ -40,6 +40,10 @@ const style = {
 
 const App = () => {
   return (
+<<<<<<< HEAD
+    <FullScreenComponent onChange={() => console.log('changed')}>
+      {({ ref, onToggle }) => {
+=======
     <div style={style.container}>
     <h1 style={style.title}>React Fullscreen</h1>
     <div>
@@ -55,6 +59,7 @@ const App = () => {
       onError={() => console.log('Error')}
     >
       {({ ref, onRequest, onExit }) => {
+>>>>>>> master
         return (
           <div
             ref={ref}
