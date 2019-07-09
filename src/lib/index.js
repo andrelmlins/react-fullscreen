@@ -5,7 +5,7 @@ import screenfull from 'screenfull';
 const ReactFullScreen = memo(({ children, onChange }) => {
   const element = createRef();
 
-  useEffect(() => onChange());
+  useEffect(() => return onChange());
   
   return children({
     ref: element,
