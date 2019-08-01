@@ -1,6 +1,6 @@
 # React FullScreen
 
-[![npm version](https://badge.fury.io/js/react-fullscreen.svg)](https://www.npmjs.com/package/react-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/react-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/react-fullscreen) &bull; [![Dependencies](https://david-dm.org/andrelmlins/react-fullscreen.svg)](https://david-dm.org/andrelmlins/react-fullscreen)
+[![npm version](https://badge.fury.io/js/react-fullscreen.svg)](https://www.npmjs.com/package/react-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/react-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/react-fullscreen) &bull; [![Dependencies](https://david-dm.org/andrelmlins/react-fullscreen.svg)](https://david-dm.org/andrelmlins/react-fullscreen) &bull; [![Netlify Status](https://api.netlify.com/api/v1/badges/79ceb0f2-f703-4092-92aa-64d441c2e9c7/deploy-status)](https://app.netlify.com/sites/react-fullscreen/deploys)
 
 Component that performs fullscreen in DOM Elements
 
