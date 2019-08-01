@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import screenfull from 'screenfull';
-export class FullScreenComponent extends React.Component {
+
+export class FullScreenComponent extends React.PureComponent {
   constructor(props) {
     super(props);
 

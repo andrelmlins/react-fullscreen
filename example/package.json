@@ -1,5 +1,5 @@
 {
-  "name": "react-fullscreen-example",
+  "name": "react-easyfullscreen-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
-    "react-fullscreen": "file:../"
+    "react-easyfullscreen": "file:../"
   },
   "scripts": {
     "start": "linklocal && react-scripts start",

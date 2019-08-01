@@ -1,5 +1,5 @@
 {
-  "name": "react-fullscreen",
+  "name": "react-easyfullscreen",
   "version": "0.1.0",
   "description": "Component that performs fullscreen in DOM Elements",
   "main": "dist/index.js",

@@ -1,5 +1,5 @@
 import React from 'react';
-import FullScreenComponent from 'react-fullscreen';
+import FullScreenComponent from 'react-easyfullscreen';
 
 const style = {
   container: {
@@ -70,6 +70,7 @@ const App = () => {
       <FullScreenComponent>
         {({ ref, onToggle }) => (
           <img
+            alt="Fullscreen"
             ref={ref}
             src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2"
             onClick={() => onToggle()}

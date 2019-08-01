@@ -7,9 +7,9 @@ Component that performs fullscreen in DOM Elements
 ## Installation
 
 ```
-npm i react-fullscreen
+npm i react-easyfullscreen
 // OR
-yarn add react-fullscreen
+yarn add react-easyfullscreen
 ```
 
 ## Demo [Link](https://react-fullscreen.netlify.com/)
@@ -27,7 +27,7 @@ yarn install && yarn start
 ```jsx
 import React, { PureComponent } from 'react';
 import { render } from 'react-dom';
-import ReactFullscreeen from 'react-fullscreen';
+import ReactFullscreeen from 'react-easyfullscreen';
 
 class App extends PureComponent {
   render() {
