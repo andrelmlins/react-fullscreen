@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, memo } from 'react';
+import { useRef, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 import screenfull from 'screenfull';
 
