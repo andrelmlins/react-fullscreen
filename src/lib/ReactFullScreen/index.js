@@ -20,6 +20,7 @@ export const FullScreenComponent = ({ children, onChange, onError }) => {
 
   return children({
     ref,
+    isEnabled: screenfull.isEnabled,
     onToggle: () => {
       screenfull.toggle(ref.current);
     },

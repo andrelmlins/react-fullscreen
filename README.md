@@ -62,3 +62,13 @@ Raw component props (before transform):
 | -------- | ---- | -------------- |
 | onChange | func | Call in change |
 | onError  | func | Call in error  |
+
+### Children Function Properties
+
+| Prop      | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| ref       | object | Ref dom element             |
+| isEnabled | bool   | If it's possible fullscreen |
+| onToggle  | func   | Call for fullscreen toggle  |
+| onExit    | func   | Call for fullscreen exit    |
+| onRequest | func   | Call for fullscreen enter   |
