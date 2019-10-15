@@ -25,31 +25,23 @@ yarn install && yarn start
 ## Examples
 
 ```jsx
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import ReactFullscreeen from 'react-easyfullscreen';
 
-class App extends PureComponent {
-  render() {
-    return (
-      <div>
-        <ReactFullscreen>
-          {({ ref, onRequest, onExit }) => {
-            return (
-              <div
-                ref={ref}
-                style={{ backgroundColor: 'red', width: 120, height: 120 }}
-              >
-                <button onClick={() => onRequest()}>FullScreen</button>
-                <button onClick={() => onExit()}>Screen</button>
-              </div>
-            );
-          }}
-        </ReactFullscreen>
+const App = () => (
+  <ReactFullscreen>
+    {({ ref, onRequest, onExit }) => (
+      <div
+        ref={ref}
+        style={{ backgroundColor: 'red', width: 120, height: 120 }}
+      >
+        <button onClick={() => onRequest()}>FullScreen</button>
+        <button onClick={() => onExit()}>Screen</button>
       </div>
-    );
-  }
-}
+    )}
+  </ReactFullscreen>
+);
 
 render(<App />, document.getElementById('root'));
 ```
