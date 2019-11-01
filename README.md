@@ -67,4 +67,4 @@ Raw component props (before transform):
 
 ## License
 
-Create React Dependency is open source software [licensed as MIT](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE).
+React FullScreen is open source software [licensed as MIT](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE).
