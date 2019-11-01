@@ -64,3 +64,7 @@ Raw component props (before transform):
 | onToggle  | func   | Call for fullscreen toggle  |
 | onExit    | func   | Call for fullscreen exit    |
 | onRequest | func   | Call for fullscreen enter   |
+
+## License
+
+Create React Dependency is open source software [licensed as MIT](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE).
