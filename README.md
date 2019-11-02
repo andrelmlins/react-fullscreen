@@ -65,6 +65,12 @@ Raw component props (before transform):
 | onExit    | func   | Call for fullscreen exit    |
 | onRequest | func   | Call for fullscreen enter   |
 
+## NPM Statistics
+
+Download stats for this NPM package
+
+[![NPM](https://nodei.co/npm/react-easyfullscreen.png)](https://nodei.co/npm/react-easyfullscreen/)
+
 ## License
 
 React FullScreen is open source software [licensed as MIT](https://github.com/andrelmlins/react-fullscreen/blob/master/LICENSE).
