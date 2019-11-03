@@ -14,11 +14,11 @@
     "Leandro Alexandrino <alexandrinowd@gmail.com> (http://leandrino.me/)"
   ],
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --hot --port 8080 --mode=development",
-    "start:prod": "webpack-cli --mode=production",
-    "build": "cross-env NODE_ENV=production babel src/lib --out-dir dist --ignore *.spec.js --copy-files",
+    "start": "react-dependency-scripts start",
+    "start:prod": "webpack-cli",
+    "build": "react-dependency-scripts build",
     "lint": "eslint src/**/*.js",
-    "test": "jest -c jest.config.json"
+    "test": "react-dependency-scripts test"
   },
   "repository": {
     "type": "git",
@@ -33,29 +33,18 @@
     "url": "https://github.com/andrelmlins/react-fullscreen/issues"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
     "babel-eslint": "^10.0.3",
-    "babel-jest": "^24.9.0",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
     "eslint-plugin-jest": "^23.0.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "html-webpack-plugin": "^3.2.0",
-    "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
+    "react-dependency-scripts": "^0.2.2",
     "react-dom": "^16.11.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "screenfull": "^5.0.0"

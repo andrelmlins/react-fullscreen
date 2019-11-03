@@ -5,6 +5,8 @@ const path = require('path');
 const APP_PATH = './src/dev';
 
 const config = {
+  mode: 'production',
+  entry: path.resolve(__dirname, APP_PATH),
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
@@ -16,11 +18,32 @@ const config = {
 
   module: {
     rules: [
-      { test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }
+      {
+        test: /\.(ts|js)x?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: [
+            '@babel/plugin-proposal-class-properties',
+            '@babel/proposal-object-rest-spread',
+            '@babel/transform-runtime'
+          ]
+        }
+      }
     ]
   },
 
-  plugins: [],
+  plugins: [
+    new Webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(APP_PATH, 'index.html')
+    })
+  ],
 
   optimization: {
     minimize: true,
@@ -47,31 +70,4 @@ const config = {
   }
 };
 
-module.exports = (env, argv) => {
-  if (argv.mode === 'development') {
-    config.entry = path.resolve(__dirname, APP_PATH);
-    config.plugins.push(
-      new HtmlWebpackPlugin({
-        inject: true,
-        template: path.join(APP_PATH, 'index.html')
-      })
-    );
-  } else {
-    config.entry = path.resolve(__dirname, APP_PATH);
-    config.plugins.push(
-      new Webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: JSON.stringify('production')
-        }
-      })
-    );
-
-    config.plugins.push(
-      new HtmlWebpackPlugin({
-        template: path.join(APP_PATH, 'index.html')
-      })
-    );
-  }
-
-  return config;
-};
+module.exports = () => config;
