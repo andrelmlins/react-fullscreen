@@ -15,10 +15,10 @@
   ],
   "scripts": {
     "start": "react-dependency-scripts start",
-    "start:prod": "webpack-cli",
     "build": "react-dependency-scripts build",
-    "lint": "eslint src/**/*.js",
-    "test": "react-dependency-scripts test"
+    "build:app": "react-dependency-scripts build-app",
+    "test": "react-dependency-scripts test",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -42,9 +42,8 @@
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dependency-scripts": "^0.5.1",
-    "react-dom": "^16.12.0",
-    "webpack-cli": "^3.3.10"
+    "react-dependency-scripts": "^0.6.0",
+    "react-dom": "^16.12.0"
   },
   "dependencies": {
     "screenfull": "^5.0.1"
