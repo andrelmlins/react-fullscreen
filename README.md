@@ -19,7 +19,7 @@ Local demo:
 ```
 git clone https://github.com/andrelmlins/react-fullscreen.git
 cd react-fullscreen
-yarn install && yarn start
+npm install && npm run start
 ```
 
 ## Examples
