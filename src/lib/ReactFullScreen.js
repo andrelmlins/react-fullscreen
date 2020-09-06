@@ -11,7 +11,7 @@ export const FullScreenComponent = ({ children, onChange, onError }) => {
         onChange();
       }
     });
-    screenfull.on('error', event => {
+    screenfull.on('error', (event) => {
       if (onError) {
         onError();
       }
@@ -29,14 +29,14 @@ export const FullScreenComponent = ({ children, onChange, onError }) => {
     },
     onExit: () => {
       screenfull.exit(ref.current);
-    }
+    },
   });
 };
 
 FullScreenComponent.propTypes = {
   children: PropTypes.func,
   onChange: PropTypes.func,
-  onError: PropTypes.func
+  onError: PropTypes.func,
 };
 
 export default memo(FullScreenComponent);

@@ -7,11 +7,11 @@ const style = {
     display: 'flex',
     flexFlow: 'column wrap',
     justifyContent: 'center',
-    width: '100%'
+    width: '100%',
   },
   title: {
     color: '#1f2041',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
   },
   screen: {
     alignItems: 'center',
@@ -21,7 +21,7 @@ const style = {
     height: 120,
     justifyContent: 'center',
     margin: 10,
-    width: 300
+    width: 300,
   },
   button: {
     backgroundColor: '#4b3f72',
@@ -30,19 +30,19 @@ const style = {
     color: '#e9d2c0',
     marginBottom: 5,
     minWidth: 120,
-    padding: 5
+    padding: 5,
   },
   image: {
     cursor: 'pointer',
-    width: '50%'
+    width: '50%',
   },
   buttonImage: {
     border: 'none',
     background: 'transparent',
     '&:focus': {
-      outline: 'none'
-    }
-  }
+      outline: 'none',
+    },
+  },
 };
 
 const App = () => {
