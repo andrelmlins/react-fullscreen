@@ -9,10 +9,7 @@ const style = {
     justifyContent: 'center',
     width: '100%',
   },
-  title: {
-    color: '#1f2041',
-    textTransform: 'uppercase',
-  },
+  title: { color: '#1f2041', textTransform: 'uppercase' },
   screen: {
     alignItems: 'center',
     backgroundColor: '#417b5a',
@@ -32,16 +29,11 @@ const style = {
     minWidth: 120,
     padding: 5,
   },
-  image: {
-    cursor: 'pointer',
-    width: '50%',
-  },
+  image: { cursor: 'pointer', width: '50%' },
   buttonImage: {
     border: 'none',
     background: 'transparent',
-    '&:focus': {
-      outline: 'none',
-    },
+    '&:focus': { outline: 'none' },
   },
 };
 
