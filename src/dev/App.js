@@ -27,7 +27,14 @@ const App = () => (
       <div style={style.card}>
         <FullScreenComponent>
           {({ ref, onToggle }) => (
-            <div ref={ref} style={style.image} onClick={() => onToggle()}>
+            <div
+              ref={ref}
+              style={style.image}
+              onClick={() => onToggle()}
+              aria-hidden="true"
+              role="button"
+              tabIndex="0"
+            >
               <h1 style={style.imageText}>Click Here</h1>
             </div>
           )}
