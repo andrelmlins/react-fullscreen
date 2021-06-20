@@ -27,7 +27,7 @@ npm install && npm run start
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import ReactFullscreeen from 'react-easyfullscreen';
+import ReactFullscreen from 'react-easyfullscreen';
 
 const App = () => (
   <ReactFullscreen>
