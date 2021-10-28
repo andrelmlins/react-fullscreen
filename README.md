@@ -65,6 +65,12 @@ Raw component props (before transform):
 | onExit    | func   | Call for fullscreen exit    |
 | onRequest | func   | Call for fullscreen enter   |
 
+## Browsers Support
+
+You can see the list of supported browsers [here](https://caniuse.com/fullscreen)
+
+![Browsers support](assets/browser-support.png)
+
 ## NPM Statistics
 
 Download stats for this NPM package
