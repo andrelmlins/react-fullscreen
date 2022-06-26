@@ -10,8 +10,8 @@ export interface IReactFullScreenChildrenProps {
 
 export interface ReactFullScreenComponentProps {
   children: (props: IReactFullScreenChildrenProps) => React.ReactNode;
-  onChange?: React.FC;
-  onError?: React.FC;
+  onChange?: () => void;
+  onError?: () => void;
 }
 
 export default class ReactFullScreenComponent extends React.Component<ReactFullScreenComponentProps> {}
