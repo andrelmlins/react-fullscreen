@@ -27,7 +27,7 @@ npm install && npm run start
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import ReactFullscreeen from 'react-easyfullscreen';
+import ReactFullscreen from 'react-easyfullscreen';
 
 const App = () => (
   <ReactFullscreen>
@@ -64,6 +64,12 @@ Raw component props (before transform):
 | onToggle  | func   | Call for fullscreen toggle  |
 | onExit    | func   | Call for fullscreen exit    |
 | onRequest | func   | Call for fullscreen enter   |
+
+## Browsers Support
+
+You can see the list of supported browsers [here](https://caniuse.com/fullscreen)
+
+![Browsers support](assets/browser-support.png)
 
 ## NPM Statistics
 
