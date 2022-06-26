@@ -11,7 +11,7 @@ export const FullScreenComponent = ({ children, onChange, onError }) => {
         onChange();
       }
     });
-    screenfull.on('error', (event) => {
+    screenfull.on('error', () => {
       if (onError) {
         onError();
       }
